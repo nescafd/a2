@@ -14,7 +14,6 @@ function ToBuyController(ShoppingListCheckOffService) {
 
   listtoBuy.items = ShoppingListCheckOffService.getItemsToBuy();
 
-
   listtoBuy.buy = function (index) {
     ShoppingListCheckOffService.bought(index);
   };
@@ -43,6 +42,9 @@ function ShoppingListCheckOffService() {
     quantity: 20
   },{
     name: 'bread',
+    quantity: 100
+  },{
+    name: 'cheese',
     quantity: 100
   },];
 
